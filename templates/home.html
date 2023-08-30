@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="text-center mt-2 mb-4">Careers linke</h1>
+      <h1 class="text-center mt-2 mb-4">Careers {{campany_name}}</h1>
       <img class="img-fluid" id="banner" src="static/panner.jpg" alt="banner" />
       <h2 class="text-center">About Careers link</h2>
       <p class="lead">
@@ -26,9 +26,9 @@
         companies
       </p>
       <h2 class="text-center mt-2">OPEN POSITIONS</h2>
-      <p>TODO: list of open positions</p>
+      <div>{% for job in jobs %} {% include 'jobitem.html' %} {% endfor %}</div>
       <div class="text-center">
-        <button class="btn btn-primary btn-lg">Apply</button>
+        <button class="btn btn-primary btn-lg">Contact Us</button>
         <p class="mt-4">copyright 2023 Bakry</p>
       </div>
     </div>
