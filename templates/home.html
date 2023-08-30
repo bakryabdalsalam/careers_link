@@ -1,57 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Creers link</title>
-    <style>
-      body {
-        background-color: #f2f2f2;
-      }
-      h1 {
-        text-align: center;
-        color: #000000;
-        font-family: Roboto;
-        font-size: 50px;
-      }
-      h2 {
-        text-align: center;
-        color: #000000;
-        font-family: Roboto;
-        font-size: 30px;
-      }
-      p {
-        text-align: center;
-        color: #000000;
-        font-family: Roboto;
-        font-size: 20px;
-      }
-      button {
-        background-color: #4caf50;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-      }
-      #banner {
-        width: 100%;
-        height: 360px;
-        object-fit: cover;
-      }
-      #container {
-        max-width: 720px;
-        margin: 0 auto 0 auto;
-      }
-    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <div id="container">
-      <h1>Careers linke</h1>
-      <img id="banner" src="static/panner.jpg" alt="banner" />
-      <h2>About Careers link</h2>
-      <p>
+    <div class="container">
+      <h1 class="text-center mt-2 mb-4">Careers linke</h1>
+      <img class="img-fluid" id="banner" src="static/panner.jpg" alt="banner" />
+      <h2 class="text-center">About Careers link</h2>
+      <p class="lead">
         Careers link is a platform that helps students to find jobs and
         internships. It also helps companies to find the best candidates for
         their jobs and internships. also helps companies to find the best
@@ -60,10 +25,11 @@
         to find the best candidates for their jobs and internships. also helps
         companies
       </p>
-      <h2>OPEN POSITIONS</h2>
+      <h2 class="text-center mt-2">OPEN POSITIONS</h2>
       <p>TODO: list of open positions</p>
-      <div style="text-align: center">
-        <button>Apply</button>
+      <div class="text-center">
+        <button class="btn btn-primary btn-lg">Apply</button>
+        <p class="mt-4">copyright 2023 Bakry</p>
       </div>
     </div>
   </body>
