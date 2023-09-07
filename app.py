@@ -28,5 +28,7 @@ def apply_to_job(id):
     add_application_to_db(id, data)
     return render_template("application_submitted.html", application=data, job=job)
 
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
